@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mysqldb:
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=doctorlabeldb
+    ports:
+      - 3307:3306
